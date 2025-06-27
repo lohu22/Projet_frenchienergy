@@ -1,0 +1,122 @@
+/* --- Style général du body --- */
+body {
+    background: #f8fafc; /* Fond pastel très clair */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Style du formulaire (connexion/inscription) --- */
+form {
+    background: #fff6fb; /* Fond pastel rose très clair */
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(180, 180, 200, 0.15);
+    max-width: 350px;
+    margin: 60px auto 0 auto; /* Centrage vertical et horizontal */
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* --- Style des titres de page --- */
+h1 {
+    text-align: center;
+    color: #a084ca; /* Violet pastel */
+    margin-bottom: 20px;
+}
+
+/* --- Style des labels de champs --- */
+label {
+    color: #7f9cf5; /* Bleu pastel */
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+/* --- Style des champs de saisie --- */
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #e0c3fc; /* Bordure violette claire */
+    border-radius: 8px;
+    background: #f3e8ff; /* Fond violet très clair */
+    font-size: 1em;
+    outline: none;
+    transition: border 0.2s;
+}
+
+/* --- Effet focus sur les champs --- */
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border: 1.5px solid #a084ca;
+    background: #f8fafc;
+}
+
+/* --- Style du bouton --- */
+button {
+    background: linear-gradient(90deg, #a084ca 60%, #f7d9e3 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+/* --- Effet hover sur le bouton --- */
+button:hover {
+    background: linear-gradient(90deg, #7f9cf5 60%, #f7d9e3 100%);
+}
+
+/* ========================= */
+/* === HEADER ET NAVBAR ==== */
+/* ========================= */
+header {
+    background: #e0c3fc; /* Violet pastel clair */
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(160, 132, 202, 0.08);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Aligne les liens à droite */
+    align-items: center;
+    gap: 32px;
+    padding: 18px 40px 18px 0; /* Ajoute un peu d'espace à droite */
+}
+
+nav a {
+    color: #7f9cf5;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.08em;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    background: #f7d9e3;
+    color: #a084ca;
+}
+
+/* ========================= */
+/* ======= FOOTER ========== */
+/* ========================= */
+footer {
+    background: #f7d9e3; /* Rose pastel clair */
+    color: #a084ca;
+    text-align: center;
+    padding: 18px 0 12px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 1em;
+    letter-spacing: 1px;
+    box-shadow: 0 -2px 8px rgba(160, 132, 202, 0.07);
+}
